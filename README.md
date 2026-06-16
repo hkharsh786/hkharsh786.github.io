@@ -1,27 +1,32 @@
-# Kumar Harsh Brand Website
+# Kumar Harsh Recruiter Portfolio Website
 
-This is a detailed GitHub Pages portfolio website for Kumar Harsh.
+This is a static GitHub Pages website for Kumar Harsh.
 
-## How to deploy
+## Deploy
 
-1. Open your GitHub repository: `hkharsh786.github.io`
-2. Delete the old website files if needed.
-3. Upload everything from this folder to the repository root.
-4. Go to Settings → Pages.
-5. Set Source to **Deploy from a branch**, Branch to **main**, Folder to **/ (root)**.
-6. Save and wait a few minutes.
+1. Create or open the repository named `hkharsh786.github.io`.
+2. Delete the old files in the repository.
+3. Upload the **contents** of this folder to the repository root.
+4. Go to **Settings → Pages**.
+5. Use:
+   - Source: Deploy from a branch
+   - Branch: main
+   - Folder: / (root)
+6. Wait for deployment and open `https://hkharsh786.github.io`.
 
-Your website should be available at:
+## Important file structure
 
-`https://hkharsh786.github.io`
+Do not put PDFs in the root. Keep documents here:
 
-## Important structure
+- `assets/resume/Kumar_Harsh_Professional_Resume.pdf`
+- `assets/resume/Kumar_Harsh_Professional_Resume.docx`
+- `assets/resume/Kumar_Harsh_LinkedIn_Profile.pdf`
 
-Keep the resume and report PDFs inside the assets folder, not in the root:
+## Master thesis and code
 
-- Resume: `assets/resume/Kumar_Harsh_Professional_Resume.pdf`
-- Reports: `assets/reports/`
+- Thesis: https://tu-dortmund.sciebo.de/s/qjEty9YHvae8zrC
+- Code: https://github.com/hkharsh786/SINDYc-on-WIP.git
 
-## Full thesis and project report PDFs
+## Notes
 
-The website already includes summarized web pages for the master thesis and projects. To activate the full PDF buttons, upload the real files to `assets/reports/` using the exact names listed in `assets/reports/README.md`.
+Company project pages are written as public-safe case studies. Do not upload confidential employer reports unless you have permission.

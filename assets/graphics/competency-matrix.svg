@@ -1,0 +1,13 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 920 520' role='img' aria-labelledby='title desc'>
+<title id='title'>Competency matrix</title><desc id='desc'>A grid showing four core engineering strengths: UAV systems, certification, controls, and automation software.</desc>
+<rect width='920' height='520' rx='28' fill='#0f172a'/>
+<g font-family='Inter,Arial'>
+<text x='56' y='70' font-size='30' font-weight='800' fill='white'>Recruiter view: where I create value</text><text x='56' y='104' font-size='16' fill='#cbd5e1'>From system architecture and control logic to test evidence and certification readiness.</text>
+</g>
+<g font-family='Inter,Arial' font-size='18' font-weight='700'>
+<rect x='56' y='150' width='380' height='120' rx='22' fill='#102a43' stroke='#38bdf8'/><text x='88' y='196' fill='#f8fafc'>UAV / Aerospace Systems</text><text x='88' y='230' font-size='14' font-weight='500' fill='#cbd5e1'>VTOL, MALE, SATCOM, BMS, wiring harness</text>
+<rect x='484' y='150' width='380' height='120' rx='22' fill='#102a43' stroke='#2dd4bf'/><text x='516' y='196' fill='#f8fafc'>Verification &amp; Certification</text><text x='516' y='230' font-size='14' font-weight='500' fill='#cbd5e1'>TEP/QTP/ATP, EMI/EMC, DO-160G, ANATEL</text>
+<rect x='56' y='316' width='380' height='120' rx='22' fill='#102a43' stroke='#f59e0b'/><text x='88' y='362' fill='#f8fafc'>Controls &amp; Robotics</text><text x='88' y='396' font-size='14' font-weight='500' fill='#cbd5e1'>PID, EKF, MPC, SINDYc, ROS/ROS2</text>
+<rect x='484' y='316' width='380' height='120' rx='22' fill='#102a43' stroke='#a78bfa'/><text x='516' y='362' fill='#f8fafc'>Automation Software</text><text x='516' y='396' font-size='14' font-weight='500' fill='#cbd5e1'>Python, MATLAB/Simulink, C/C++, Git, CIM</text>
+</g>
+</svg>

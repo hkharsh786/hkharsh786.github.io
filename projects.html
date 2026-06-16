@@ -3,133 +3,106 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Detailed project library for Kumar Harsh covering UAV testing, master thesis, robotics, controls, smart grids, and aviation certification." />
+  <meta name="description" content="Detailed engineering project pages for Kumar Harsh." />
+  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:title" content="Projects | Kumar Harsh" />
+  <meta property="og:description" content="Detailed engineering project pages for Kumar Harsh." />
+  <meta property="og:type" content="website" />
   <title>Projects | Kumar Harsh</title>
+  <link rel="preload" href="styles.css" as="style" />
   <link rel="stylesheet" href="styles.css" />
+
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header">
-  <nav class="nav" aria-label="Main navigation">
-    <a class="brand-mark" href="index.html"><span class="brand-logo">KH</span><span>Kumar Harsh</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
-    <div class="nav-links" id="nav-links">
+
+<header class="site-header" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="nav" aria-label="Primary navigation">
+    <a class="brand" href="index.html" aria-label="Kumar Harsh home"><span class="brand-mark">KH</span><span>Kumar Harsh</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <div class="nav-menu" id="nav-menu">
       <a href="index.html">Home</a>
-      <a class="active" href="projects.html">Projects</a>
+      <a href="projects.html">Projects</a>
       <a href="experience.html">Experience</a>
       <a href="reports.html">Reports</a>
       <a href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
+
 <main id="main">
-  <section class="case-hero">
-    <div class="container">
-      <span class="kicker">Project library</span>
-      <h1>Detailed work, summarized for fast reading.</h1>
-      <p class="lead">Each project opens as a separate case-study page with problem framing, engineering approach, outcomes, graphics, and a full PDF slot for thesis or project reports.</p>
-    </div>
-  </section>
-  <section class="section compact">
-    <div class="container">
-      <div class="filter-bar" aria-label="Filter projects">
-        <button class="filter active" data-filter="all">All</button>
-        <button class="filter" data-filter="uav">UAV</button>
-        <button class="filter" data-filter="controls">Controls</button>
-        <button class="filter" data-filter="robotics">Robotics</button>
-        <button class="filter" data-filter="certification">Certification</button>
-        <button class="filter" data-filter="automation">Automation</button>
-      </div>
-      <div class="grid three">
-      <article class="card project-card" data-category="controls robotics research">
-        <div class="project-media"><img src="assets/graphics/sindyc-pipeline.svg" alt="Graphic for Master Thesis: SINDYc for Nonlinear MPC on evoBot" /></div>
-        <div class="project-body">
-          <p class="kicker">Master Thesis · TU Dortmund / Fraunhofer IML</p>
-          <h3>Master Thesis: SINDYc for Nonlinear MPC on evoBot</h3>
-          <p>Nonlinear system identification and predictive control using Sparse Identification of Nonlinear Dynamics with control inputs.</p>
-          <div class="project-tags"><span class="tag">controls</span><span class="tag">robotics</span><span class="tag">research</span></div>
-          <a class="button small" href="projects/master-thesis-sindyc-mpc.html">Read summarized case study</a>
-        </div>
-      </article>
-      <article class="card project-card" data-category="uav certification hardware">
-        <div class="project-media"><img src="assets/graphics/uav-battery-bench.svg" alt="Graphic for UAV Battery Qualification &amp; Acceptance Test Bench" /></div>
-        <div class="project-body">
-          <p class="kicker">Professional Case Study · Wingcopter GmbH</p>
-          <h3>UAV Battery Qualification & Acceptance Test Bench</h3>
-          <p>Battery test bench architecture, dummy-battery concept, stress testing, SoC mapping, and certification evidence for UAV systems.</p>
-          <div class="project-tags"><span class="tag">uav</span><span class="tag">certification</span><span class="tag">hardware</span></div>
-          <a class="button small" href="projects/uav-battery-qualification.html">Read summarized case study</a>
-        </div>
-      </article>
-      <article class="card project-card" data-category="robotics controls research">
-        <div class="project-media"><img src="assets/graphics/drone-sensor-fusion.svg" alt="Graphic for Human-Drone Interaction: Drone Swarm Sensor Fusion" /></div>
-        <div class="project-body">
-          <p class="kicker">Research Case Study · TU Dortmund University</p>
-          <h3>Human-Drone Interaction: Drone Swarm Sensor Fusion</h3>
-          <p>6DoF IMU datasets, EKF sensor fusion, PID tuning, ROS2 migration, and Crazyflie/Crazyswarm indoor logistics work.</p>
-          <div class="project-tags"><span class="tag">robotics</span><span class="tag">controls</span><span class="tag">research</span></div>
-          <a class="button small" href="projects/drone-swarm-sensor-fusion.html">Read summarized case study</a>
-        </div>
-      </article>
-      <article class="card project-card" data-category="software automation research">
-        <div class="project-media"><img src="assets/graphics/smart-grid-automation.svg" alt="Graphic for Smart Grid Automation: IEC 61850 / CIM Tooling" /></div>
-        <div class="project-body">
-          <p class="kicker">Research Case Study · IE3, TU Dortmund University</p>
-          <h3>Smart Grid Automation: IEC 61850 / CIM Tooling</h3>
-          <p>Python automation for IID generation, CIMPY migration, digital grid connection points, and household SCD auto-configuration.</p>
-          <div class="project-tags"><span class="tag">software</span><span class="tag">automation</span><span class="tag">research</span></div>
-          <a class="button small" href="projects/smart-grid-automation.html">Read summarized case study</a>
-        </div>
-      </article>
-      <article class="card project-card" data-category="controls robotics project">
-        <div class="project-media"><img src="assets/graphics/nao-mpc.svg" alt="Graphic for NAO Soccer Robot: Upper Body Control with MPC" /></div>
-        <div class="project-body">
-          <p class="kicker">Academic Project · TU Dortmund University</p>
-          <h3>NAO Soccer Robot: Upper Body Control with MPC</h3>
-          <p>Group project on model predictive control for NAO robot upper-body balance during walking and ball kicking.</p>
-          <div class="project-tags"><span class="tag">controls</span><span class="tag">robotics</span><span class="tag">project</span></div>
-          <a class="button small" href="projects/nao-upper-body-control.html">Read summarized case study</a>
-        </div>
-      </article>
-      <article class="card project-card" data-category="uav controls hardware">
-        <div class="project-media"><img src="assets/graphics/aircraft-controls.svg" alt="Graphic for Aircraft Design: Autopilot Control Laws for MALE / VTOL UAVs" /></div>
-        <div class="project-body">
-          <p class="kicker">Professional Case Study · TATA Advanced Systems</p>
-          <h3>Aircraft Design: Autopilot Control Laws for MALE / VTOL UAVs</h3>
-          <p>Control laws, system architecture, PID tuning, and MIL/SIL/HIL validation for UAV aircraft development.</p>
-          <div class="project-tags"><span class="tag">uav</span><span class="tag">controls</span><span class="tag">hardware</span></div>
-          <a class="button small" href="projects/aircraft-design-controls.html">Read summarized case study</a>
-        </div>
-      </article>
-      <article class="card project-card" data-category="aviation certification">
-        <div class="project-media"><img src="assets/graphics/certification-flow.svg" alt="Graphic for Flight Simulation: EASA MTQG Documentation for A320/A330" /></div>
-        <div class="project-body">
-          <p class="kicker">Professional Case Study · Avengers Flight Group</p>
-          <h3>Flight Simulation: EASA MTQG Documentation for A320/A330</h3>
-          <p>EASA-compliant Master Test Quality Guide documentation and simulator maintenance compliance support.</p>
-          <div class="project-tags"><span class="tag">aviation</span><span class="tag">certification</span></div>
-          <a class="button small" href="projects/flight-simulation-mtqg.html">Read summarized case study</a>
-        </div>
-      </article>
-      </div>
-    </div>
-  </section>
+
+<section class="page-hero section-shell reveal">
+  <p class="eyebrow">Projects &amp; case studies</p>
+  <h1>Detailed engineering work, summarized for recruiters and technical interviewers.</h1>
+  <p class="lead">These pages explain what I worked on, why it mattered, the tools and standards involved, and what a recruiter should notice. Confidential company details are intentionally kept public-safe.</p>
+</section>
+<section class="section-shell"><div class="cards three-up">
+<article class="project-card reveal">
+  <img src="assets/graphics/sindyc-pipeline.svg" alt="Graphic for Master Thesis: SINDYc + MPC" />
+  <div><span class="tag">Master Thesis</span><h3>Master Thesis: SINDYc + MPC</h3><p>Nonlinear system identification and control using Sparse Identification of Nonlinear Dynamics for MPC on evoBot.</p><a href="projects/master-thesis-sindyc-mpc.html">Open project →</a></div>
+</article>
+
+<article class="project-card reveal">
+  <img src="assets/graphics/battery-qualification.svg" alt="Graphic for UAV Battery Qualification Bench" />
+  <div><span class="tag">UAV V&V</span><h3>UAV Battery Qualification Bench</h3><p>Qualification, acceptance testing, dummy battery architecture, SoC mapping and safety-threshold validation.</p><a href="projects/uav-battery-qualification.html">Open project →</a></div>
+</article>
+
+<article class="project-card reveal">
+  <img src="assets/graphics/certification-flow.svg" alt="Graphic for Certification & Compliance Evidence" />
+  <div><span class="tag">Certification</span><h3>Certification & Compliance Evidence</h3><p>TEP/QTP/ATP, ANATEL documentation, EMI/EMC testing, DO-160G lighting tests and homologation evidence.</p><a href="projects/certification-compliance.html">Open project →</a></div>
+</article>
+
+<article class="project-card reveal">
+  <img src="assets/graphics/drone-fusion.svg" alt="Graphic for Drone Swarm Sensor Fusion" />
+  <div><span class="tag">Robotics</span><h3>Drone Swarm Sensor Fusion</h3><p>6DoF IMU datasets, EKF sensor fusion, PID tuning, ROS/ROS2 migration and indoor logistics demos.</p><a href="projects/drone-swarm-sensor-fusion.html">Open project →</a></div>
+</article>
+
+<article class="project-card reveal">
+  <img src="assets/graphics/smart-grid.svg" alt="Graphic for Smart Grid Automation" />
+  <div><span class="tag">Automation</span><h3>Smart Grid Automation</h3><p>IEC 61850, IEC 61970-301, CIMPY 3.0, IID/SCD generation and Python automation framework.</p><a href="projects/smart-grid-automation.html">Open project →</a></div>
+</article>
+
+<article class="project-card reveal">
+  <img src="assets/graphics/aircraft-controls.svg" alt="Graphic for Aircraft Controls & Electrical Integration" />
+  <div><span class="tag">Aerospace</span><h3>Aircraft Controls & Electrical Integration</h3><p>VTOL/MALE autopilot control laws, EKF altitude estimation, BLDC selection, wiring harness and BOM creation.</p><a href="projects/aircraft-design-controls.html">Open project →</a></div>
+</article>
+
+<article class="project-card reveal">
+  <img src="assets/graphics/certification-flow.svg" alt="Graphic for Flight Simulation MTQG Documentation" />
+  <div><span class="tag">Simulation</span><h3>Flight Simulation MTQG Documentation</h3><p>EASA-compliant Master-QTG documentation for Airbus A320/A330 simulator maintenance and qualification.</p><a href="projects/flight-simulation-mtqg.html">Open project →</a></div>
+</article>
+
+<article class="project-card reveal">
+  <img src="assets/graphics/sindyc-pipeline.svg" alt="Graphic for NAO Upper Body Control with MPC" />
+  <div><span class="tag">Robotics</span><h3>NAO Upper Body Control with MPC</h3><p>Model Predictive Control for upper-body balance during walking and ball-kicking in a soccer robot project.</p><a href="projects/nao-upper-body-control.html">Open project →</a></div>
+</article></div></section>
+<section class="section-shell info-note reveal"><h2>About full reports</h2><p>The master thesis includes the public thesis link and code repository from my LinkedIn profile. Company work is presented as public-safe case studies; detailed internal reports are not published online unless cleared for sharing.</p></section>
+
 </main>
-<footer class="footer">
-  <div class="container footer-grid">
+
+<footer class="site-footer">
+  <div class="footer-grid">
     <div>
-      <strong>Kumar Harsh</strong><br />
-      <span>UAV/UAS systems, robotics, controls, validation, and certification evidence.</span>
+      <p class="eyebrow">Kumar Harsh</p>
+      <p>UAV/UAS systems, robotics, controls, V&amp;V and certification engineering.</p>
     </div>
-    <div class="mini-links">
-      <a href="mailto:hkharsh411@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/hkharsh786/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/hkharsh786" target="_blank" rel="noopener">GitHub</a>
-      <a href="assets/resume/Kumar_Harsh_Professional_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <div>
+      <p class="footer-title">Contact</p>
+      <p><a href="mailto:hkharsh411@gmail.com">hkharsh411@gmail.com</a></p>
+      <p><a href="tel:+4917627801361">DE: +49 176 2780 1361</a></p>
+      <p><a href="tel:+918862966522">IN: +91 88629 66522</a></p>
+    </div>
+    <div>
+      <p class="footer-title">Profiles</p>
+      <p><a href="https://www.linkedin.com/in/hkharsh786/" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p><a href="https://github.com/hkharsh786" target="_blank" rel="noopener">GitHub</a></p>
+      <p><a href="assets/resume/Kumar_Harsh_Professional_Resume.pdf" target="_blank" rel="noopener">Resume PDF</a></p>
     </div>
   </div>
-  <div class="container" style="margin-top:18px;font-size:.9rem">© <span id="year"></span> Kumar Harsh. Built as a personal engineering brand on GitHub Pages.</div>
+  <p class="copyright">© <span id="year"></span> Kumar Harsh. Built for GitHub Pages.</p>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>

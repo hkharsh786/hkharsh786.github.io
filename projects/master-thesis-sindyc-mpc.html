@@ -3,81 +3,80 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Nonlinear system identification and predictive control using Sparse Identification of Nonlinear Dynamics with control inputs." />
-  <title>Master Thesis: SINDYc for Nonlinear MPC on evoBot | Kumar Harsh</title>
+  <meta name="description" content="A research project on identifying nonlinear dynamics using sparse methods and evaluating the identified model for Model Predictive Control on evoBot." />
+  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:title" content="Nonlinear System Identification and Control using SINDYc for MPC | Kumar Harsh" />
+  <meta property="og:description" content="A research project on identifying nonlinear dynamics using sparse methods and evaluating the identified model for Model Predictive Control on evoBot." />
+  <meta property="og:type" content="website" />
+  <title>Nonlinear System Identification and Control using SINDYc for MPC | Kumar Harsh</title>
+  <link rel="preload" href="../styles.css" as="style" />
   <link rel="stylesheet" href="../styles.css" />
+
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header">
-  <nav class="nav" aria-label="Main navigation">
-    <a class="brand-mark" href="../index.html"><span class="brand-logo">KH</span><span>Kumar Harsh</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
-    <div class="nav-links" id="nav-links">
+
+<header class="site-header" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="nav" aria-label="Primary navigation">
+    <a class="brand" href="../index.html" aria-label="Kumar Harsh home"><span class="brand-mark">KH</span><span>Kumar Harsh</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <div class="nav-menu" id="nav-menu">
       <a href="../index.html">Home</a>
-      <a class="active" href="../projects.html">Projects</a>
+      <a href="../projects.html">Projects</a>
       <a href="../experience.html">Experience</a>
       <a href="../reports.html">Reports</a>
       <a href="../contact.html">Contact</a>
     </div>
   </nav>
 </header>
+
 <main id="main">
-  <section class="case-hero">
-    <div class="container">
-      <div class="breadcrumbs"><a href="../index.html">Home</a> / <a href="../projects.html">Projects</a> / Master Thesis: SINDYc for Nonlinear MPC on evoBot</div>
-      <span class="kicker">Master Thesis · TU Dortmund / Fraunhofer IML</span>
-      <h1>Master Thesis: SINDYc for Nonlinear MPC on evoBot</h1>
-      <p class="lead">Nonlinear system identification and predictive control using Sparse Identification of Nonlinear Dynamics with control inputs.</p>
-      <div class="hero-actions"><a class="button primary" href="#summary">Read web summary</a><a class="button ghost" href="../reports.html">Report upload guide</a></div>
+
+<section class="project-hero section-shell reveal">
+
+<nav class="project-nav" aria-label="Project navigation"><a href="../projects.html">← All projects</a><a href="../contact.html">Contact Kumar</a></nav>
+
+  <p class="eyebrow">Master Thesis · Fraunhofer IML / TU Dortmund</p>
+  <h1>Nonlinear System Identification and Control using SINDYc for MPC</h1>
+  <p class="lead">A research project on identifying nonlinear dynamics using sparse methods and evaluating the identified model for Model Predictive Control on evoBot.</p>
+  <div class="project-actions"><a class='button primary' href='https://tu-dortmund.sciebo.de/s/qjEty9YHvae8zrC' target='_blank' rel='noopener'>Read full thesis</a><a class='button secondary' href='https://github.com/hkharsh786/SINDYc-on-WIP.git' target='_blank' rel='noopener'>View code</a></div>
+</section>
+<section class="section-shell split-section">
+  <div class="case-study reveal">
+    <h2>Summary</h2><p>This master thesis focused on nonlinear system identification and control using Sparse Identification of Nonlinear Dynamics with control inputs, commonly known as SINDYc. The goal was to identify a compact and useful model from system data and use it within a Model Predictive Control workflow for evoBot.</p>
+    <h2>Why it matters</h2><p>In robotics and automation, control performance depends heavily on the quality of the model. SINDYc provides a data-driven way to discover governing dynamics while keeping the model interpretable enough for control design.</p>
+    <h2>My contribution</h2><ul><li>Structured the identification workflow from data collection to model selection.</li><li>Worked with nonlinear dynamics and control-oriented modeling.</li><li>Evaluated the approach on evoBot in the context of MPC.</li><li>Completed the thesis with grade 1.7.</li></ul>
+    <h2>Technologies</h2><p>System identification, SINDYc, Model Predictive Control, robotics, Python/MATLAB workflow, control evaluation and experimental data analysis.</p>
+    <h2>Recruiter takeaway</h2><p>This project shows my ability to connect research-level modeling with practical control engineering: data, model structure, controller design, validation and documentation.</p>
     </div>
-  </section>
-  <section class="section compact">
-    <div class="container case-layout">
-      <div>
-        <section class="case-section" id="summary">
-          <h2>Executive summary</h2>
-          <p>The thesis focused on identifying compact nonlinear dynamics from experimental or simulated system data and evaluating the identified model inside a predictive control workflow.</p><p>The core engineering question was how to move from observed input-output behavior to a control-oriented model that can support Model Predictive Control without relying only on hand-derived equations.</p><p>The work connected data-driven modeling, sparse regression, controller design, and validation on evoBot, with the project conducted externally with Fraunhofer IML.</p>
-          <div class="diagram"><img src="../assets/graphics/sindyc-pipeline.svg" alt="Technical diagram for Master Thesis: SINDYc for Nonlinear MPC on evoBot" /></div>
-          <div class="report-box">
-            <h3>Full document</h3>
-            <p>Use this slot for the full thesis or project report PDF.</p>
-            <a class="button primary" data-report-file="Kumar_Harsh_Master_Thesis.pdf" href="../assets/reports/Kumar_Harsh_Master_Thesis.pdf" target="_blank" rel="noopener">Read full master thesis PDF</a>
-            <p class="report-status missing">Checking whether the full PDF has been uploaded...</p>
-          </div>
-        </section>
-        <section class="case-section" id="problem"><h2>Problem framing</h2><p>Mobile robotic systems can be difficult to model accurately when dynamics are nonlinear, coupled, or affected by changing operating conditions. A useful controller needs a model that is accurate enough for prediction, compact enough for optimization, and transparent enough for engineering review.</p></section>
-        <section class="case-section" id="approach"><h2>Engineering approach</h2><ul class="case-list"><li>Collected or structured time-series data covering system states, inputs, and response behavior.</li><li>Built a sparse candidate library of nonlinear terms that could explain the observed dynamics.</li><li>Used SINDYc to identify governing equations with control inputs.</li><li>Evaluated whether the identified model could be used inside an MPC workflow.</li><li>Compared tracking behavior, prediction quality, and controller feasibility against project requirements.</li></ul></section>
-        <section class="case-section" id="outcomes"><h2>Outcomes and value</h2><ul class="case-list"><li>Created a clear pipeline from measured data to sparse nonlinear model discovery.</li><li>Demonstrated how identified models can support control-oriented prediction.</li><li>Built a thesis narrative combining robotics, control theory, and data-driven system identification.</li><li>Thesis grade: 1.7.</li></ul></section>
-        <section class="case-section" id="details"><h2>Details for recruiters and collaborators</h2><h3>What to show in interviews</h3><ul class="case-list"><li>Ability to translate a research problem into an engineering workflow.</li><li>Experience with model-based and data-driven control.</li><li>Comfort working between theory, simulation, software, and robotic evaluation.</li></ul><h3>Possible next extension</h3><ul class="case-list"><li>Publish a reproducible GitHub notebook with synthetic data, model identification, and MPC demonstration.</li><li>Add figures comparing prediction error and closed-loop control performance once the thesis PDF is uploaded.</li></ul></section>
-        <section class="case-section"><h2>How this fits the Kumar Harsh brand</h2><p>This case study strengthens the central brand message: engineering reliable autonomous systems requires controls knowledge, test discipline, data interpretation, and documentation that can survive technical review.</p></section>
-      </div>
-      <aside class="side-card card case-meta">
-        <h3>Project snapshot</h3>
-        <p><strong>Period</strong><br>2023 - 2024</p>
-        <p><strong>Role</strong><br>Researcher and thesis author</p>
-        <p><strong>Tools / methods</strong><br>Python, MATLAB, MPC, SINDYc, nonlinear dynamics, system identification</p>
-        <div class="toc"><a href="#summary">Executive summary</a><a href="#problem">Problem</a><a href="#approach">Approach</a><a href="#outcomes">Outcomes</a><a href="#details">Recruiter details</a></div>
-        <p style="margin-top:16px"><a class="button small" href="../projects.html">Back to all projects</a></p>
-      </aside>
-    </div>
-  </section>
+  <img class="visual-card sticky-visual reveal" src="../assets/graphics/sindyc-pipeline.svg" alt="Graphic for Nonlinear System Identification and Control using SINDYc for MPC" />
+</section>
+<section class="section-shell cta-panel reveal"><div><p class="eyebrow">Discuss this work</p><h2>Want to know how this experience maps to your role?</h2><p>I can explain the technical details, trade-offs and public-safe project context in an interview.</p></div><a class="button primary" href="../contact.html">Contact me</a></section>
+
 </main>
-<footer class="footer">
-  <div class="container footer-grid">
+
+<footer class="site-footer">
+  <div class="footer-grid">
     <div>
-      <strong>Kumar Harsh</strong><br />
-      <span>UAV/UAS systems, robotics, controls, validation, and certification evidence.</span>
+      <p class="eyebrow">Kumar Harsh</p>
+      <p>UAV/UAS systems, robotics, controls, V&amp;V and certification engineering.</p>
     </div>
-    <div class="mini-links">
-      <a href="mailto:hkharsh411@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/hkharsh786/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/hkharsh786" target="_blank" rel="noopener">GitHub</a>
-      <a href="../assets/resume/Kumar_Harsh_Professional_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <div>
+      <p class="footer-title">Contact</p>
+      <p><a href="mailto:hkharsh411@gmail.com">hkharsh411@gmail.com</a></p>
+      <p><a href="tel:+4917627801361">DE: +49 176 2780 1361</a></p>
+      <p><a href="tel:+918862966522">IN: +91 88629 66522</a></p>
+    </div>
+    <div>
+      <p class="footer-title">Profiles</p>
+      <p><a href="https://www.linkedin.com/in/hkharsh786/" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p><a href="https://github.com/hkharsh786" target="_blank" rel="noopener">GitHub</a></p>
+      <p><a href="../assets/resume/Kumar_Harsh_Professional_Resume.pdf" target="_blank" rel="noopener">Resume PDF</a></p>
     </div>
   </div>
-  <div class="container" style="margin-top:18px;font-size:.9rem">© <span id="year"></span> Kumar Harsh. Built as a personal engineering brand on GitHub Pages.</div>
+  <p class="copyright">© <span id="year"></span> Kumar Harsh. Built for GitHub Pages.</p>
 </footer>
+
 <script src="../script.js"></script>
 </body>
 </html>

@@ -3,47 +3,73 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Report and thesis library for Kumar Harsh portfolio website." />
-  <title>Reports &amp; Thesis | Kumar Harsh</title>
+  <meta name="description" content="Document hub for Kumar Harsh resume, LinkedIn PDF, thesis, code and project case studies." />
+  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:title" content="Reports | Kumar Harsh" />
+  <meta property="og:description" content="Document hub for Kumar Harsh resume, LinkedIn PDF, thesis, code and project case studies." />
+  <meta property="og:type" content="website" />
+  <title>Reports | Kumar Harsh</title>
+  <link rel="preload" href="styles.css" as="style" />
   <link rel="stylesheet" href="styles.css" />
+
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header">
-  <nav class="nav" aria-label="Main navigation">
-    <a class="brand-mark" href="index.html"><span class="brand-logo">KH</span><span>Kumar Harsh</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
-    <div class="nav-links" id="nav-links">
+
+<header class="site-header" id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav class="nav" aria-label="Primary navigation">
+    <a class="brand" href="index.html" aria-label="Kumar Harsh home"><span class="brand-mark">KH</span><span>Kumar Harsh</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+    <div class="nav-menu" id="nav-menu">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="experience.html">Experience</a>
-      <a class="active" href="reports.html">Reports</a>
+      <a href="reports.html">Reports</a>
       <a href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
+
 <main id="main">
-  <section class="case-hero"><div class="container"><span class="kicker">Thesis & reports</span><h1>Document library with full-PDF slots.</h1><p class="lead">The web case studies are already included. Full thesis and project report buttons will activate automatically when the corresponding PDFs are uploaded to <code>assets/reports/</code>.</p></div></section>
-  <section class="section compact"><div class="container">
-    <div class="notice"><strong>Important:</strong> I did not create fake thesis or project report PDFs. Upload the real documents using the exact filenames below, then GitHub Pages will serve them from the project pages.</div>
-    <div class="card" style="margin-top:18px;overflow:auto"><table class="table"><thead><tr><th>Document</th><th>Expected PDF path</th><th>Web summary</th></tr></thead><tbody><tr><td><strong>Master Thesis: SINDYc for Nonlinear MPC on evoBot</strong><br><span class="muted">Master Thesis · TU Dortmund / Fraunhofer IML</span></td><td><code>assets/reports/Kumar_Harsh_Master_Thesis.pdf</code></td><td><a class="button small" href="projects/master-thesis-sindyc-mpc.html">Open summary</a></td></tr><tr><td><strong>UAV Battery Qualification &amp; Acceptance Test Bench</strong><br><span class="muted">Professional Case Study · Wingcopter GmbH</span></td><td><code>assets/reports/UAV_Battery_Qualification_Report.pdf</code></td><td><a class="button small" href="projects/uav-battery-qualification.html">Open summary</a></td></tr><tr><td><strong>Human-Drone Interaction: Drone Swarm Sensor Fusion</strong><br><span class="muted">Research Case Study · TU Dortmund University</span></td><td><code>assets/reports/Drone_Swarm_Sensor_Fusion_Report.pdf</code></td><td><a class="button small" href="projects/drone-swarm-sensor-fusion.html">Open summary</a></td></tr><tr><td><strong>Smart Grid Automation: IEC 61850 / CIM Tooling</strong><br><span class="muted">Research Case Study · IE3, TU Dortmund University</span></td><td><code>assets/reports/Smart_Grid_Automation_Report.pdf</code></td><td><a class="button small" href="projects/smart-grid-automation.html">Open summary</a></td></tr><tr><td><strong>NAO Soccer Robot: Upper Body Control with MPC</strong><br><span class="muted">Academic Project · TU Dortmund University</span></td><td><code>assets/reports/NAO_Upper_Body_Control_Project_Report.pdf</code></td><td><a class="button small" href="projects/nao-upper-body-control.html">Open summary</a></td></tr><tr><td><strong>Aircraft Design: Autopilot Control Laws for MALE / VTOL UAVs</strong><br><span class="muted">Professional Case Study · TATA Advanced Systems</span></td><td><code>assets/reports/Aircraft_Design_Control_Laws_Report.pdf</code></td><td><a class="button small" href="projects/aircraft-design-controls.html">Open summary</a></td></tr><tr><td><strong>Flight Simulation: EASA MTQG Documentation for A320/A330</strong><br><span class="muted">Professional Case Study · Avengers Flight Group</span></td><td><code>assets/reports/Flight_Simulation_MTQG_Report.pdf</code></td><td><a class="button small" href="projects/flight-simulation-mtqg.html">Open summary</a></td></tr></tbody></table></div>
-    <div class="callout" style="margin-top:18px"><h2>How to activate full report buttons</h2><p>Open your GitHub repository, go to <code>assets/reports/</code>, upload the PDF using the exact filename from the table, and commit. Wait for GitHub Pages to deploy, then refresh the project page.</p></div>
-  </div></section>
+
+<section class="page-hero section-shell reveal">
+  <p class="eyebrow">Reports &amp; documents</p>
+  <h1>Resume, LinkedIn profile, thesis and project reading links.</h1>
+  <p class="lead">This page gives recruiters a clean document hub. Public documents are linked directly; confidential company reports are summarized through public-safe project pages.</p>
+</section>
+<section class="section-shell document-grid">
+  <article class="document-card reveal"><span class="tag">Resume</span><h2>Professional Resume PDF</h2><p>ATS-friendly professional resume optimized from my resume and LinkedIn profile.</p><a class="button secondary" href="assets/resume/Kumar_Harsh_Professional_Resume.pdf" target="_blank" rel="noopener">Open PDF</a></article>
+  <article class="document-card reveal"><span class="tag">Resume</span><h2>Professional Resume DOCX</h2><p>Editable Word version of the resume.</p><a class="button secondary" href="assets/resume/Kumar_Harsh_Professional_Resume.docx">Download DOCX</a></article>
+  <article class="document-card reveal"><span class="tag">LinkedIn</span><h2>LinkedIn Profile PDF</h2><p>Downloaded LinkedIn profile snapshot used to enrich this website.</p><a class="button secondary" href="assets/resume/Kumar_Harsh_LinkedIn_Profile.pdf" target="_blank" rel="noopener">Open LinkedIn PDF</a></article>
+  <article class="document-card reveal"><span class="tag">Master Thesis</span><h2>SINDYc + MPC Thesis</h2><p>Full thesis link from my LinkedIn profile, hosted externally.</p><a class="button primary" href="https://tu-dortmund.sciebo.de/s/qjEty9YHvae8zrC" target="_blank" rel="noopener">Read thesis</a><a class="button ghost" href="https://github.com/hkharsh786/SINDYc-on-WIP.git" target="_blank" rel="noopener">View code</a></article>
+  <article class="document-card reveal"><span class="tag">Project Reports</span><h2>Company project details</h2><p>Company work is summarized as public-safe case studies. Full internal reports are not published unless approved.</p><a class="button secondary" href="projects.html">Read case studies</a></article>
+  <article class="document-card reveal"><span class="tag">Publications</span><h2>Research publications</h2><p>BLDC Motor Driven Water Pump Fed by Solar PV Array using Boost Converter and Border Detection System for Fisherman using GPS and Arduino.</p><a class="button secondary" href="contact.html">Request details</a></article>
+</section>
+
 </main>
-<footer class="footer">
-  <div class="container footer-grid">
+
+<footer class="site-footer">
+  <div class="footer-grid">
     <div>
-      <strong>Kumar Harsh</strong><br />
-      <span>UAV/UAS systems, robotics, controls, validation, and certification evidence.</span>
+      <p class="eyebrow">Kumar Harsh</p>
+      <p>UAV/UAS systems, robotics, controls, V&amp;V and certification engineering.</p>
     </div>
-    <div class="mini-links">
-      <a href="mailto:hkharsh411@gmail.com">Email</a>
-      <a href="https://www.linkedin.com/in/hkharsh786/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/hkharsh786" target="_blank" rel="noopener">GitHub</a>
-      <a href="assets/resume/Kumar_Harsh_Professional_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <div>
+      <p class="footer-title">Contact</p>
+      <p><a href="mailto:hkharsh411@gmail.com">hkharsh411@gmail.com</a></p>
+      <p><a href="tel:+4917627801361">DE: +49 176 2780 1361</a></p>
+      <p><a href="tel:+918862966522">IN: +91 88629 66522</a></p>
+    </div>
+    <div>
+      <p class="footer-title">Profiles</p>
+      <p><a href="https://www.linkedin.com/in/hkharsh786/" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p><a href="https://github.com/hkharsh786" target="_blank" rel="noopener">GitHub</a></p>
+      <p><a href="assets/resume/Kumar_Harsh_Professional_Resume.pdf" target="_blank" rel="noopener">Resume PDF</a></p>
     </div>
   </div>
-  <div class="container" style="margin-top:18px;font-size:.9rem">© <span id="year"></span> Kumar Harsh. Built as a personal engineering brand on GitHub Pages.</div>
+  <p class="copyright">© <span id="year"></span> Kumar Harsh. Built for GitHub Pages.</p>
 </footer>
+
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
